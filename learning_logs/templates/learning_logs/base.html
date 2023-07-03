@@ -7,6 +7,11 @@
 
     {% load django_bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
     {% load static %}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
@@ -110,25 +115,28 @@
           <div class="col-md-6">
             <div class="d-flex justify-content-start">
               <a href="#" class="btn btn-outline-light me-2">
-                <img
-                  src="{% static 'images/github.png' %}"
-                  alt="GitHub"
-                  class="social-icon"
-                />
+                <i
+                  class="fab fa-github-square social-icon fa-2x"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a href="#" class="btn btn-outline-light me-2">
-                <img
-                  src="{% static 'images/linkedin.png' %}"
-                  alt="LinkedIn"
-                  class="social-icon"
-                />
+                <i
+                  class="fab fa-linkedin social-icon fa-2x"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a href="#" class="btn btn-outline-light me-2">
-                <img
-                  src="{% static 'images/twitter.png' %}"
-                  alt="Twitter"
-                  class="social-icon"
-                />
+                <i
+                  class="fab fa-twitter-square social-icon fa-2x"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a href="#" class="btn btn-outline-light me-2">
+                <i
+                  class="fab fa-instagram social-icon fa-2x"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </div>

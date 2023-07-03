@@ -99,6 +99,18 @@ def edit_entry(request, entry_id):
 
 # Addition of imageForge Views
 
-def generate(request):
+def generation(request):
     """Show generation page."""
-    return render(request, 'learning_logs/generate.html')
+    return render(request, 'learning_logs/generation.html')
+
+def gallery(request):
+    """Show gallery page."""
+    return render(request, 'learning_logs/gallery.html')
+
+def user_history(request):
+    """Show user history page."""
+    return render(request, 'learning_logs/user_history.html')
+
+def about(request):
+    """Show the about page."""
+    return render(request, 'learning_logs/about.html')

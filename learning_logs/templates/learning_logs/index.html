@@ -22,7 +22,7 @@
   class="d-flex justify-content-center align-items-center"
   style="height: 20vh"
 >
-  <form method="POST" action="{% url 'learning_logs:generate' %}">
+  <form method="POST" action="{% url 'learning_logs:generation' %}">
     {% csrf_token %}
     <button type="submit" class="btn btn-success btn-lg mt-1">GENERATE</button>
   </form>

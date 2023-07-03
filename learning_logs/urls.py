@@ -19,5 +19,11 @@ urlpatterns = [
     # Page for editing an entry.
     path('edit_entry/<int:entry_id>/', views.edit_entry, name='edit_entry'),
     # Page for generating an image
-    path('generate/>/', views.generate, name='generate'),
+    path('generation/', views.generation, name='generation'),
+    # Page that displays the generated images
+    path('gallery/', views.gallery, name='gallery'),
+    # Page that displays the user image generation history
+    path('user_history/', views.user_history, name='user_history'),
+    # Page to show the about us content
+    path('about/', views.about, name='about'),
 ]
